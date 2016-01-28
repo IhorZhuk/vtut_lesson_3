@@ -158,3 +158,45 @@
 .thumb-8 {
   .bg-img('thumb-8.jpg');
 }
+
+//section video
+
+.stn-video {
+  &:extend(.stn-padding);
+  background-color: #515f67;
+  color: #fff;
+  
+  .btn-ghost-grey {
+    margin-bottom: 50px;
+  }
+}
+
+.stn-video-col {
+  margin-top: -80px;
+  
+  @media (max-width:992px) {
+    margin-top: 0;
+  }
+}
+
+//section twitter
+
+.stn-twitter {
+  &:extend(.stn-padding);
+  background-color: @accent;
+  color: #fff;
+  
+  p {
+    font-size: 2em;
+    font-weight: 300;
+  }
+  
+  strong {
+    font-weight: 500;
+  }
+}
+
+.stn-twitter-icon {
+  font-size: 26px;
+  float: right;
+}

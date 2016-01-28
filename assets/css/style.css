@@ -1753,7 +1753,9 @@ select[multiple].input-lg {
 }
 .stn-padding,
 .stn-services,
-.stn-portfolio {
+.stn-portfolio,
+.stn-video,
+.stn-twitter {
   padding: 80px 0;
 }
 @font-face {
@@ -1873,10 +1875,45 @@ select[multiple].input-lg {
 .horizontal-nav.black-font a {
   color: #515f67;
 }
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn-ghost-grey {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #353f46;
+  border: 2px solid #353f46;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+  line-height: 1;
+  padding: 1.07em 2.857em;
+  font-size: 1em;
+}
+.btn-ghost-grey:hover {
+  text-decoration: none;
+  color: #ffffff;
+  border-color: #ffffff;
+}
 body {
   font-family: 'Segoe', Arial, sans-serif;
   font-size: 14px;
   line-height: 1.71428571;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 .site-header {
   background-image: url('../img/hero-img.jpg');
@@ -2041,4 +2078,34 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
+}
+.stn-video {
+  background-color: #515f67;
+  color: #fff;
+}
+.stn-video .btn-ghost-grey {
+  margin-bottom: 50px;
+}
+.stn-video-col {
+  margin-top: -80px;
+}
+@media (max-width: 992px) {
+  .stn-video-col {
+    margin-top: 0;
+  }
+}
+.stn-twitter {
+  background-color: #4bcaff;
+  color: #fff;
+}
+.stn-twitter p {
+  font-size: 2em;
+  font-weight: 300;
+}
+.stn-twitter strong {
+  font-weight: 500;
+}
+.stn-twitter-icon {
+  font-size: 26px;
+  float: right;
 }
