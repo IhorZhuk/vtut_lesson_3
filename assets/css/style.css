@@ -1955,6 +1955,7 @@ p {
   line-height: 1;
 }
 .stn-heading:after {
+  display: table;
   content: '';
   width: 45px;
   height: 2px;
@@ -1986,7 +1987,6 @@ p {
 }
 .stn-portfolio .stn-heading {
   margin-bottom: 80px;
-  margin-left: -15px;
 }
 .thumbs-row {
   min-height: 570px;
