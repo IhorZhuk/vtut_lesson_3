@@ -200,3 +200,68 @@
   font-size: 26px;
   float: right;
 }
+
+//section about who is john
+
+.stn-about {
+  &:extend(.stn-padding);
+  .bg-img('camera.jpg');
+  color:#fff;
+}
+
+.social-links {
+  &:extend(.ul-unstyled);
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  a {
+    display: table;
+    color:#fff;
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+    text-align: center;
+    border:2px solid #fff;
+    transition: all .3s ease-in-out;
+    &:hover {
+      border-color: @accent;
+      color:@accent;
+      text-decoration: none;
+    }
+    
+    i {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }//a
+}//social-links
+
+//section testimonials
+
+.stn-testimonials {
+  &:extend(.stn-padding);
+  
+  .stn-heading .icon-quote {
+    color:#515f67;
+    font-size: 30px;
+    float: right;
+  }
+}
+
+.tst-quote {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 300;
+  
+  cite {
+    display: block;
+    color:@accent;
+    font-size: .5em;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+}
+
