@@ -265,3 +265,59 @@
   }
 }
 
+//FOOTER
+.site-footer {
+  &:extend(.stn-padding);
+  background-color: #353f47;
+  color:#515f67;
+  font-size: 0.857em;
+  font-weight: 500;
+}
+
+.footer-nav {
+  &:extend(.ul-unstyled);
+  float: left;
+  text-transform: uppercase;
+  
+  li {
+    display: inline-block;
+    &:before {
+      content: '|';
+    }
+    
+    &:first-child {
+      &:before {
+        content: '';
+      }
+      a {
+        padding-left: 0;
+      }
+    }
+  }
+  
+  a {
+    color:inherit;
+    display: inline-block;
+    padding: 0 10px;
+  }
+}//footer-nav
+
+.copyright {
+  float: right;
+}
+
+//CONTACT stn-contact
+
+.stn-contact {
+  &:extend(.stn-padding);
+  .bg-img('camera-2.jpg');
+  color:#fff;
+}
+
+.frm-text-col {
+  margin-top: 18px;
+  
+  @media (max-width:768px) {
+    margin-top: 0;
+  }
+}
