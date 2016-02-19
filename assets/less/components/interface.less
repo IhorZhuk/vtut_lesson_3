@@ -1,7 +1,7 @@
 //forms, buttons, dialogs etc.
 
-//menu
-.horizontal-nav{
+//main navigation
+.horizontal-nav {
   &:extend(.ul-unstyled);
 
   li {
@@ -33,6 +33,62 @@
     color: @font;
   }
 }
+
+//RESPONSIVE MENU
+.main-nav-trigger {
+  display: none;
+  font-size: 45px;
+  color:#fff;
+  float: right;
+  line-height: 1;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+  font-family: Arial Unicode MS, Lucida Sans Unicode, sans-serif;
+  &:hover {
+    color:@accent;
+  }
+}
+
+@media (max-width:992px) {
+  
+  .main-nav-trigger {
+    display: block;
+  }
+  
+  .main-logo {
+    float: left;
+  }
+  
+  .site-nav {
+    position: relative;
+  }
+  
+  .site-nav .horizontal-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: @overlay;
+    
+    li {
+      width: 100%;
+      display: block;
+      margin-left: 0;
+      text-align: center;
+      border-bottom: 1px solid lighten(@overlay, 5%);
+    }
+    
+    a {
+      display: inline-block;
+      padding: 20px 30px;
+      &.active {
+        border-color: transparent;
+      }
+    }
+  }//horizontal-nav
+  
+}//media 992px
 
 //iframe responsive
 .videoWrapper {

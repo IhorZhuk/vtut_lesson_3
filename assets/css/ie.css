@@ -1,0 +1,7 @@
+.thumbs-row a:after {
+  display: none;
+}
+
+.thumbs-row a:hover:after {
+  display: block;
+}
